@@ -5,11 +5,13 @@ import {BrowserRouter} from 'react-router-dom'
 import LandingPage from './containers/landingPage'
 import Campgrounds from './containers/campgroundsPage'
 import {Route, Switch, Redirect} from 'react-router-dom'
+import NewCampground from './containers/newCampground'
 
 
 function App() {
   let routes=(
     <Switch>
+      <Route path="/campgrounds/new" component={NewCampground}></Route>
       <Route path="/campgrounds" component={Campgrounds}></Route>
       <Route exact path="/" component={LandingPage}></Route>
       <Redirect to="/"></Redirect>

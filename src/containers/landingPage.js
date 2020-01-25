@@ -7,6 +7,7 @@ export class LandingPage extends Component {
         return(
             <div>
                 <Link to="/campgrounds">Campgrounds Link!!</Link>
+                <Link to="/campgrounds/new">Click to add a new campground!</Link>
                 <h1>Landing!</h1>
             </div>
 
